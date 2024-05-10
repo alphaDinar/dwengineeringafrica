@@ -22,7 +22,7 @@ const BlogBox = () => {
             <video muted autoPlay loop controls src={sample} ></video>
           </div>
           <article>
-            <strong>Welcome To David Walter</strong>
+            <strong>Welcome To DW Engineering Africa</strong>
             <span>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa labore recusandae dignissimos facere sit eum hic beatae! Ipsum at aspernatur architecto repellendus velit quod! Officiis ratione nulla mollitia aliquid sunt!
             </span>
@@ -45,7 +45,7 @@ const BlogBox = () => {
               <div className={styles.top}>
                 <Image alt='' width={80} height={80} src={sample2} />
                 <article>
-                  <strong>Welcome To David Walter</strong>
+                  <strong>Welcome To DW Engineering Africa</strong>
                   <span>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa labore recusandae dignissimos facere sit eum.
                   </span>
