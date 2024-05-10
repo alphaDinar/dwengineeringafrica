@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 
 const BlogBox = () => {
-  const sample = 'https://res.cloudinary.com/dvnemzw0z/video/upload/v1708642380/david%20walter/_import_631da4f240c008.77162318_720p_5000br_hkv0zm.mp4';
+  const sample = 'https://res.cloudinary.com/dvnemzw0z/video/upload/v1715359991/david%20walter/1109276_1080p_standard_elegant_1920x1080_icnmna.mp4';
   const sample2 = 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1708680863/david%20walter/high-angle-measuring-tools-still-life_23-2150440970_x2lh5y.avif';
 
   return (
