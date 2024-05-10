@@ -1,0 +1,47 @@
+.skillBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skill {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 25px;
+  border-left: 4px solid var(--text);
+  border-top: 4px solid var(--text);
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.skill svg {
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  padding: 5px;
+  left: 25px;
+  top: -15px;
+  background: black;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 10px;
+}
+
+@media all and (max-width:1100px) {
+  .skillBox {
+    grid-template-columns: 1fr;
+    gap: 3vh;
+  }
+
+  .skill {
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill svg {
+    left: calc(50% - 15px);
+  }
+}

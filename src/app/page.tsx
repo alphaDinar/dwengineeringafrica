@@ -1,95 +1,40 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import TopNav from "./components/TopNav/TopNav";
+import AboutBox from "./home/AboutBox/AboutBox";
+import BlogBox from "./home/BlogBox/BlogBox";
+import ChoiceBox from "./home/ChoiceBox/ChoiceBox";
+import ClientBox from "./home/ClientBox/ClientBox";
+import HeadBox from "./home/HeadBox/HeadBox";
+import SkillBox from "./home/SkillBox/SkillBox";
+import TestimonialBox from "./home/TestimonialBox/TestimonialBox";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <section>
+        <TopNav />
+        <HeadBox />
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <SkillBox />
+      <AboutBox />
+      <ClientBox />
+      <ChoiceBox />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <TestimonialBox />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <BlogBox />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.039531574266!2d-0.2127994259245494!3d5.561159433599683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf90a0ad388495%3A0x3637a94eff4ed377!2sDavid%20Walter%20Ghana%20Limited!5e0!3m2!1sen!2sgh!4v1708681404756!5m2!1sen!2sgh"
+          width="100%" height="350"
+          loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+      </section>
     </main>
   );
 }
+
+export default Home;

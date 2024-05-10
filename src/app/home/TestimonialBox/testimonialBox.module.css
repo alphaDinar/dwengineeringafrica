@@ -1,0 +1,89 @@
+.testimonialBox {
+  position: relative;
+  padding: 5vh 0;
+  margin: 0 auto;
+}
+
+.testimonialBox .sheet {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.151);
+}
+
+.testimonialBox img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.con {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+.testimonialSwiper {
+  width: 80%;
+}
+
+.testimonial {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: white;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 350px;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  /* border-left: 3px solid var(--text);
+  border-top: 3px solid var(--text); */
+}
+
+.testimonial .imgBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial strong {
+  font-size: 1.2rem;
+}
+
+.testimonial span {
+  font-weight: 600;
+}
+
+.testimonial .imgBox img {
+  border-radius: 50%;
+}
+
+.testimonialBox article {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.testimonialBox article legend {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  background: var(--theme);
+}
+
+.testimonialBox article legend:nth-child(1) {
+  width: 40px;
+}
+
+@media all and (max-width:1100px) {
+  .testimonialSwiper {
+    width: 100%;
+  }
+}
