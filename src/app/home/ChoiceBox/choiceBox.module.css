@@ -56,7 +56,8 @@
 
 @media all and (max-width:1100px) {
   .choiceBox {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .right {

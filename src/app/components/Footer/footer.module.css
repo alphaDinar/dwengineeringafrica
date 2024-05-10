@@ -1,0 +1,153 @@
+.footerBox {
+  width: 80%;
+  padding: 5vh 10%;
+  background: var(--bg);
+  color: white;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+.low {
+  width: 100%;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.low a {
+  color: white;
+}
+
+.low a p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.low div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.low div h3 {
+  border-bottom: 4px solid white;
+  width: max-content;
+}
+
+.low div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerBox form input,
+.footerBox form textarea {
+  width: 240px;
+  padding: 10px;
+}
+
+.footerBox form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.footerBox form button {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--text);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+.footerBox hr {
+  width: 100%;
+  border-top: 2px dotted darkgray;
+}
+
+.socialBox {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialBox svg {
+  font-size: 1.5rem;
+}
+
+.low .left,
+.low .mid,
+.low .right,
+.low p,
+.low a {
+  text-align: center;
+  align-items: center;
+}
+.low p{
+  justify-content: center;
+}
+
+
+@media all and (max-width : 1300px) {
+  .footerBox {
+    width: 90%;
+    padding: 5vh 5%;
+  }
+}
+
+@media all and (max-width : 1000px) {
+  .footerBox .low {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .left,
+  .mid,
+  .right {
+    margin: auto;
+    width: 100%;
+  }
+
+  .footerBox .low div,
+  .footerBox .low div ul {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerBox .low a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media all and (max-width : 500px) {
+  .footerBox form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footerBox form input,
+  .footerBox form textarea {
+    width: calc(100% - 20px);
+  }
+}

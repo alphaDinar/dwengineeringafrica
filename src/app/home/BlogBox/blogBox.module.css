@@ -1,3 +1,23 @@
+.blogBox{
+  display: grid;
+  gap: 3vh;
+}
+
+.blogBox header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogBox header a{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--text);
+  padding: 8px;
+  color: var(--theme);
+  font-weight: bold;
+}
+
 .con {
   width: 100%;
   display: grid;
@@ -11,7 +31,6 @@
   flex-direction: column;
   background: whitesmoke;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* background: var(--bg); */
 }
 
 .left .imgBox {
@@ -57,7 +76,6 @@
 
 .left .socialBox p svg,
 .nextBlog .socialBox p svg {
-  color: white;
   font-size: 1.2rem;
   color: var(--theme);
 }
@@ -80,11 +98,9 @@
 
 
 .nextBlog {
-  padding: 20px;
-  background: white;
-  /* background: var(--bg); */
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* color: white; */
+  padding: 15px;
+  background: whitesmoke;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .nextBlog .top {

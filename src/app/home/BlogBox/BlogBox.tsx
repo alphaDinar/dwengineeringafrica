@@ -11,9 +11,9 @@ const BlogBox = () => {
   return (
     <section className={styles.blogBox} id='hor'>
       <header>
-        <h3>News & Blog</h3>
-        <sub></sub>
-        <Link href={'/projects'}><MdArrowForward /> More</Link>
+        <span id='liner'>News & Blog</span>
+        {/* <sub></sub> */}
+        <Link href={'/projects'}> More <MdArrowForward /></Link>
       </header>
 
       <section className={styles.con}>

@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import TopNav from "./components/TopNav/TopNav";
 import AboutBox from "./home/AboutBox/AboutBox";
 import BlogBox from "./home/BlogBox/BlogBox";
@@ -31,7 +32,9 @@ const Home = () => {
           width="100%" height="350"
           loading="lazy" referrerPolicy="no-referrer-when-downgrade">
         </iframe>
-        
+
+
+        <Footer />
       </section>
     </main>
   );
