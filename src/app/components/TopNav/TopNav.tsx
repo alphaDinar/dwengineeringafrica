@@ -31,7 +31,7 @@ const TopNav = () => {
         <h3 className={styles.logo}>LOGO</h3>
 
         <nav className={navToggled ? styles.change : ''}>
-          <Link href={''}>Home</Link>
+          <Link href={'/'}>Home</Link>
           <Link href={'/about'}>About</Link>
           <Link href={'/services'}>Services</Link>
           <Link href={'/projects'}>Projects</Link>

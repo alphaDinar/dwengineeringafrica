@@ -27,6 +27,7 @@
   --text: white;
   --text: #232323;
   --text: #ffe46c;
+  --gSpace: 1rem;
   /* --text: lightgray; */
 }
 
@@ -34,6 +35,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10vh;
+}
+
+#con {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 #hor {
@@ -68,6 +75,17 @@ body::-webkit-scrollbar-thumb {
 #liner {
   border-bottom: 3px solid var(--text);
   padding: 5px 0;
+}
+
+#title {
+  font-size: 1.5rem;
+  color: var(--theme);
+  padding: 5px 0;
+  border-bottom: 4px solid var(--text);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #cut,
@@ -114,5 +132,12 @@ body::-webkit-scrollbar-thumb {
 
   main {
     gap: 7vh;
+  }
+}
+
+
+@media all and (max-width:650px) {
+  :root {
+    --gSpace: 0.5rem;
   }
 }

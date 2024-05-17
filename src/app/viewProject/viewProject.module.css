@@ -1,0 +1,201 @@
+.project {
+  display: grid;
+  gap: 3vh;
+  padding-bottom: 3vh;
+}
+
+.gallery {
+  display: grid;
+  gap: var(--gSpace);
+}
+
+.top,
+.low {
+  height: 380px;
+  display: grid;
+  gap: var(--gSpace);
+}
+
+.top {
+  grid-template-columns: 7fr 3fr;
+}
+
+.low {
+  grid-template-columns: 3fr 7fr;
+}
+
+.top .left,
+.low .right {
+  position: relative;
+}
+
+.top .right,
+.low .left {
+  gap: var(--gSpace);
+  display: grid;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.imgBox img {
+  object-position: center;
+}
+
+.mid {
+  display: grid;
+  gap: var(--gSpace);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mid .imgBox {
+  height: 300px;
+}
+
+.slideSheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideBox {
+  width: calc(65% - 40px);
+  height: calc(85vh - 40px + 10px);
+  background: var(--theme);
+  background: white;
+  padding: 20px;
+  position: relative;
+}
+
+.slideBox svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: tomato;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+.swiperBox {
+  height: calc(85vh - 150px - 40px);
+}
+
+.swiperBox img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.thumbBox {
+  margin-top: 10px;
+  height: 150px;
+}
+
+.thumbBox img {
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+@media all and (max-width:1100px) {
+  .slideBox {
+    width: calc(90% - 40px);
+    height: calc(85vh - 40px + 10px);
+  }
+}
+
+
+@media all and (max-width:650px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .top,
+  .low {
+    height: revert;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top .left,
+  .low .right {
+    height: 300px;
+  }
+
+  .top .right,
+  .low .left {
+    height: 300px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mid .imgBox {
+    height: 200px;
+  }
+
+  .slideBox {
+    padding: 10px;
+    width: calc(90% - 40px);
+    height: calc(75vh - 20px + 10px);
+  }
+
+  .swiperBox {
+    height: calc(75vh - 150px - 20px);
+  }
+}
+
+@media all and (max-width:450px) {
+  .mid {
+    grid-template-columns: 1fr;
+  }
+
+  .top .left,
+  .low .right,
+  .top .right,
+  .low .left {
+    height: 200px;
+  }
+
+  .slideBox {
+    width: calc(90% - 40px);
+    height: calc(55vh - 40px + 10px);
+  }
+
+  .swiperBox {
+    height: calc(55vh - 80px - 40px);
+  }
+
+  .thumbBox {
+    margin-top: 10px;
+    height: 80px;
+  }
+}
+
+@media all and (max-width:400px) {
+
+  .top .right,
+  .low .left {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .imgBox {
+    height: 200px;
+  }
+}
