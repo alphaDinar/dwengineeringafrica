@@ -1,0 +1,84 @@
+.teamBox {
+  display: grid;
+  gap: 3vh;
+}
+
+.members {
+  display: grid;
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.member {
+  display: grid;
+  gap: 1rem;
+  min-height: 380px;
+  padding: 10px;
+  background: whitesmoke;
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  border-radius: 15px 15px 0 0;
+}
+
+.member .imgBox {
+  height: 200px;
+  position: relative;
+}
+
+.member .imgBox img {
+  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
+}
+
+.member p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.member p strong {
+  font-size: 1.2rem;
+}
+
+.member svg {
+  font-size: 1.2rem;
+}
+
+.member p small {
+  font-size: 1rem;
+}
+
+@media all and (max-width:1100px) {
+  .teamBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .members {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width:850px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width:550px) {
+  .members {
+    gap: 1rem;
+  }
+
+  .member {
+    min-height: 450px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  }
+
+  .members {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

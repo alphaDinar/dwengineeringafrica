@@ -35,7 +35,7 @@ const TopNav = () => {
           <Link href={'/about'}>About</Link>
           <Link href={'/services'}>Services</Link>
           <Link href={'/projects'}>Projects</Link>
-          <Link href={'/contact'}>Team</Link>
+          <Link href={'/team'}>Team</Link>
           <Link href={'/contact'}>Contact</Link>
           <MdMenu className={styles.menuTab} onClick={toggleNav} />
         </nav>

@@ -1,0 +1,73 @@
+.aboutBox {
+  display: grid;
+  gap: 3vh;
+}
+
+.conBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.conBox .left {
+  position: relative;
+}
+
+.conBox .left img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: -75px;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.conBox .right {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conBox .right article {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.conBox .right article legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.conBox .right img {
+  width: 100%;
+  margin-left: auto;
+}
+
+@media all and (max-width:850px) {
+  .aboutBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conBox {
+    grid-template-columns: 1fr;
+  }
+
+  .conBox .left {
+    height: 350px;
+  }
+
+  .conBox .right {
+    padding: revert;
+  }
+}
+
+@media all and (max-width:500px) {
+  .conBox .left {
+    height: 250px;
+  }
+}
