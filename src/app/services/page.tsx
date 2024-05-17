@@ -19,7 +19,7 @@ const Services = () => {
 
         <section className={styles.services}>
           {Array(6).fill('a').map((el, i) => (
-            <div className={styles.service} >
+            <div className={styles.service} key={i}>
               <div className={styles.imgBox}>
                 <Image alt='' src={place} fill className='cover' />
               </div>
