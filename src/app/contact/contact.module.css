@@ -1,0 +1,110 @@
+.contactBox {
+  display: grid;
+  gap: 3vh;
+  padding-bottom: 4vh;
+}
+
+.conBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.left form {
+  display: grid;
+  gap: 1rem;
+}
+
+.left form p {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.left form p input,
+.left form p textarea {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.left form p textarea {
+  height: 150px;
+  resize: none;
+}
+
+.left form button {
+  padding: 8px;
+  background: var(--theme);
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.right {
+  display: grid;
+  gap: 2rem;
+}
+
+.right h3 {
+  font-size: 1.5rem;
+}
+
+.right article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right article legend {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right article legend svg {
+  font-size: 2rem;
+}
+
+.right article legend p {
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+}
+
+.right div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right div svg {
+  font-size: 1.5rem;
+  color: var(--theme);
+}
+
+@media all and (max-width:1200px) {
+  .right article {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media all and (max-width:850px) {
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.5vh;
+  }
+
+  .conBox {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    gap: 2vh;
+  }
+
+  .right div {
+    display: none;
+  }
+}

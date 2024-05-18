@@ -13,7 +13,7 @@ const BlogBox = () => {
       <header>
         <span id='liner'>News & Blog</span>
         {/* <sub></sub> */}
-        <Link href={'/projects'}> More <MdArrowForward /></Link>
+        <Link href={'/blog'}> More <MdArrowForward /></Link>
       </header>
 
       <section className={styles.con}>

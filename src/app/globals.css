@@ -85,8 +85,10 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 4px solid var(--text);
   width: max-content;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+  word-wrap: break-word;
 }
 
 #cut,
@@ -146,5 +148,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
+  }
+
+  #title {
+    width: revert;
   }
 }

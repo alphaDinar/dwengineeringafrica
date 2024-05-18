@@ -25,7 +25,7 @@ const AboutBox = () => {
         </h3>
         <small style={{ fontSize: '1rem' }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dignissimos nobis corporis doloremque illo explicabo soluta repellat neque quas et tenetur assumenda impedit aperiam inventore iste quasi, perspiciatis fugit quidem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolores accusamus facere ad laudantium provident consectetur corporis fugiat laboriosam fugit odio, enim veritatis, labore excepturi! Magnam fuga quia vero quis.</small>
 
-        <Link href={'/'} >Learn More</Link>
+        <Link href={'/about'} >Learn More</Link>
       </section>
     </section>
   );

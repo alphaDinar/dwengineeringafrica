@@ -20,7 +20,7 @@ const HeadBox = () => {
 
           <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laudantium voluptatibus placeat reprehenderit amet vel ipsam consectetur voluptate ut veniam soluta eum eaque, nemo excepturi error inventore alias non deserunt.</small>
 
-          <Link href={''}>Contact Us <MdEast /></Link>
+          <Link href={'/contact'}>Contact Us <MdEast /></Link>
         </article>
       </section>
     </section>
