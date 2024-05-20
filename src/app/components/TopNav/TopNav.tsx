@@ -4,6 +4,7 @@ import styles from './topNav.module.css';
 import { MdMenu, MdOutlineFacebook, MdPhone } from 'react-icons/md';
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useState } from 'react';
+import { GiSpellBook } from 'react-icons/gi';
 
 const TopNav = () => {
   const [navToggled, setNavToggled] = useState(false);
@@ -24,6 +25,7 @@ const TopNav = () => {
           <Link href={''}> <FaFacebookF /> </Link>
           <Link href={''}> <FaLinkedin /> </Link>
           <Link href={''}> <FaInstagram /> </Link>
+          <a href=""><GiSpellBook />E-Brochure</a>
         </legend>
       </section>
       {/* <hr /> */}

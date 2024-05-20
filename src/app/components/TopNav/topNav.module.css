@@ -35,10 +35,18 @@
 .top legend {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .top legend svg {
   font-size: 1.2rem;
+  color: var(--text);
+}
+
+.top legend a {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
   color: var(--text);
 }
 

@@ -14,7 +14,11 @@ const Projects = () => {
       <TopNav />
 
       <section className={styles.projectBox} id='hor'>
-        <TitleBox title={'Project Gallery'} />
+        <header>
+          <TitleBox title={'Project Gallery'} />
+
+          <Link href={'/timeline'}>Project Timeline</Link>
+        </header>
 
         <section className={styles.projects}>
           {Array(10).fill('a').map((el, i) => (

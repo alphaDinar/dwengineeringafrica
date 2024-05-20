@@ -1,12 +1,23 @@
+'use client'
 import Image from 'next/image';
 import Footer from '../components/Footer/Footer';
 import TitleBox from '../components/TitleBox/TitleBox';
 import TopNav from '../components/TopNav/TopNav';
 import styles from './team.module.css';
 import { MdOutlineWorkspacePremium } from 'react-icons/md';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Team = () => {
   const place = 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1715909566/david%20walter/portrait-african-american-man_23-2149072214_uhhk9k.jpg';
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
+
   return (
     <section id='con'>
       <TopNav />
@@ -16,7 +27,7 @@ const Team = () => {
 
         <section className={styles.members}>
           {Array(10).fill('a').map((el, i) => (
-            <div className={styles.member} key={i}>
+            <div className={styles.member} key={i} data-aos="fade-up" data-aos-delay={50 * (i + 1)}>
               <div className={styles.imgBox}>
                 <Image alt='' src={place} fill className='cover' />
               </div>

@@ -1,37 +1,34 @@
+'use client'
 import styles from './choiceBox.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ChoiceBox = () => {
+  const choiceList = [
+    { counter: '01', tag: 'Collaborative' },
+    { counter: '02', tag: 'Efficient' },
+    { counter: '03', tag: 'Progressive' },
+    { counter: '04', tag: 'Respectful' },
+  ]
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
   return (
     <section className={styles.choiceBox} id='hor'>
-      <section className={styles.left}>
-        <div className={styles.choice}>
-          <sup>01</sup>
-          <strong>Collaborative</strong>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-          </span>
-        </div>
-        <div className={styles.choice}>
-          <sup>02</sup>
-          <strong>Efficient</strong>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-          </span>
-        </div>
-        <div className={styles.choice}>
-          <sup>03</sup>
-          <strong>Progressive</strong>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-          </span>
-        </div>
-        <div className={styles.choice}>
-          <sup>04</sup>
-          <strong>Respectful</strong>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-          </span>
-        </div>
+      <section className={styles.left} >
+        {choiceList.map((choice, i) => (
+          <div className={styles.choice} data-aos="fade-up" data-aos-delay={50 * (i + 1)} key={i}>
+            <sup>{choice.counter}</sup>
+            <strong>{choice.tag}</strong>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
+            </span>
+          </div>
+        ))}
       </section>
       <section className={styles.right}>
         <span id='liner'>Why Choose Us</span>
