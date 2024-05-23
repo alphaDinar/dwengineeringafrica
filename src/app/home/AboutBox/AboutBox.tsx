@@ -7,6 +7,8 @@ import { MdTaskAlt } from 'react-icons/md';
 const AboutBox = () => {
   // const place = 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1715294788/david%20walter/construction-site-build-construction-work-159358_iu6ks3.jpg'
 
+  const aboutText = "David Walter Limited (DWL) is a renowned leader in the construction industry, boasting nearly five decades of excellence and innovation. With a diverse portfolio valued at over USD 129 million in completed projects and USD 93 million in ongoing endeavors, DWL consistently exceeds client expectations while leaving a lasting impact on infrastructure development.Our commitment to quality, integrity, and client satisfaction is evident in every project we undertake, from residential apartments to critical infrastructure such as railways and educational institutions. Beyond project completion, DWL's focus on sustainability drives positive change in communities across multiple countries.";
+
   return (
     <section className={styles.aboutBox} id='hor'>
       <section className={styles.left}>
@@ -23,7 +25,9 @@ const AboutBox = () => {
         <h3>
           Engineering Frontiers: Where Innovation Takes Flight
         </h3>
-        <small style={{ fontSize: '1rem' }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dignissimos nobis corporis doloremque illo explicabo soluta repellat neque quas et tenetur assumenda impedit aperiam inventore iste quasi, perspiciatis fugit quidem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolores accusamus facere ad laudantium provident consectetur corporis fugiat laboriosam fugit odio, enim veritatis, labore excepturi! Magnam fuga quia vero quis.</small>
+        <small style={{ fontSize: '1rem' }}>
+          {aboutText}
+        </small>
 
         <Link href={'/about'} >Learn More</Link>
       </section>

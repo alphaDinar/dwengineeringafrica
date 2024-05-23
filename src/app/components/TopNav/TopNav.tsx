@@ -5,6 +5,8 @@ import { MdMenu, MdOutlineFacebook, MdPhone } from 'react-icons/md';
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useState } from 'react';
 import { GiSpellBook } from 'react-icons/gi';
+import Image from 'next/image';
+import logo from '../../../../public/logo.png';
 
 const TopNav = () => {
   const [navToggled, setNavToggled] = useState(false);
@@ -17,8 +19,8 @@ const TopNav = () => {
     <section className={styles.topNav} id='hor'>
       <section className={styles.top}>
         <p>
-          <Link href={''}> <MdPhone /> <span className='cash'>+233 55 000 0000</span>  </Link>
-          <Link href={''}> <MdPhone /> <span>sales@dwengineeringafrica.com</span>  </Link>
+          <Link href={''}> <MdPhone /> <span className='cash'>+233 (0) 30 222 4517</span>  </Link>
+          <Link href={''}> <MdPhone /> <span>dwloffice@davidwalterghana.com</span>  </Link>
         </p>
 
         <legend>
@@ -30,7 +32,8 @@ const TopNav = () => {
       </section>
       {/* <hr /> */}
       <section className={styles.low}>
-        <h3 className={styles.logo}>LOGO</h3>
+        <Image alt='' src={logo} width={180} height={80} className='contain' />
+        {/* <h3 className={styles.logo}>LOGO</h3> */}
 
         <nav className={navToggled ? styles.change : ''}>
           <Link href={'/'}>Home</Link>

@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.skill strong{
+  font-size: 1.2rem;
+}
+
+.skill p{
+  font-size: 0.9rem;
+}
+
 .skill svg {
   position: absolute;
   min-width: 20px;

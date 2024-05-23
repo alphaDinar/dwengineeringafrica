@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 
 const ChoiceBox = () => {
   const choiceList = [
-    { counter: '01', tag: 'Collaborative' },
-    { counter: '02', tag: 'Efficient' },
-    { counter: '03', tag: 'Progressive' },
-    { counter: '04', tag: 'Respectful' },
-  ]
+    { counter: '01', tag: 'Professionalism', con : "We uphold the highest standards of integrity, competence, and accountability in all our endeavors." },
+    { counter: '02', tag: 'Respect', con : "We value diversity and treat all individuals with dignity, courtesy, and fairness, fostering an inclusive and supportive environment."},
+    { counter: '03', tag: 'Openness', con : "We embrace transparency, honesty, and receptiveness to new ideas and feedback, fostering a culture of trust and collaboration."},
+    { counter: '04', tag: 'Fairness', con : "We are committed to ensuring equitable treatment and opportunities for all stakeholders, promoting justice and integrity in all our interactions." },
+  ];
 
   useEffect(() => {
     AOS.init({
@@ -25,7 +25,7 @@ const ChoiceBox = () => {
             <sup>{choice.counter}</sup>
             <strong>{choice.tag}</strong>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
+              {choice.con}
             </span>
           </div>
         ))}
@@ -37,7 +37,7 @@ const ChoiceBox = () => {
 
         <small style={{ fontSize: '1rem' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquam suscipit fugit, quibusdam commodi cupiditate non asperiores, illum consequuntur nisi neque animi quia reprehenderit possimus fugiat officiis delectus minus error.</small>
 
-        <img height={200} className='contain' src="https://res.cloudinary.com/dvnemzw0z/image/upload/v1715304248/david%20walter/smiling-young-builder-man-uniform-with-safety-helmet-standing-with-crossed-arms-isolated-orange-wall-with-copy-space_141793-119957-removebg-preview_1_gu0cn6.png" alt="" />
+        <img height={200} className='contain' src="https://res.cloudinary.com/dvnemzw0z/image/upload/v1716470707/dwEngineering/worker_vynlbu.png" alt="" />
       </section>
     </section>
   );

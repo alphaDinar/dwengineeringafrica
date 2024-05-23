@@ -18,7 +18,9 @@ const HeadBox = () => {
             Engineering Excellence: Uniting Vision and Ingenuity
           </h3>
 
-          <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laudantium voluptatibus placeat reprehenderit amet vel ipsam consectetur voluptate ut veniam soluta eum eaque, nemo excepturi error inventore alias non deserunt.</small>
+          <small>
+            David Walter Limited (DWL) is a premier construction firm with nearly five decades of experience, specializing in Civil Engineering, General Building, Electrical and Mechanical, Master Planning, and Construction Innovation.
+          </small>
 
           <Link href={'/contact'}>Contact Us <MdEast /></Link>
         </article>

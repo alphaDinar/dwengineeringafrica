@@ -2,6 +2,9 @@
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
   background: #2d2b2b;
+  background: rgb(217, 217, 217);
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: grid;
   gap: 0.7rem;
 }
@@ -26,10 +29,11 @@
   align-items: center;
   gap: 0.5rem;
   color: white;
+  color: var(--theme);
 }
 
 .top p a svg {
-  color: var(--text);
+  color: var(--theme);
 }
 
 .top legend {
@@ -40,14 +44,14 @@
 
 .top legend svg {
   font-size: 1.2rem;
-  color: var(--text);
+  color: var(--theme);
 }
 
 .top legend a {
   display: flex;
   gap: 0.3rem;
   align-items: center;
-  color: var(--text);
+  color: var(--theme);
 }
 
 .low {
@@ -66,11 +70,11 @@
 }
 
 .low nav a {
-  color: var(--text);
+  color: var(--theme);
 }
 
 .logo {
-  color: var(--text);
+  color: var(--theme);
   font-size: 1.5rem;
 }
 
@@ -101,7 +105,8 @@
     position: absolute;
     right: 100%;
     top: 0;
-    background: white;
+    background: var(--theme);
+    color: var(--text);
     padding: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }

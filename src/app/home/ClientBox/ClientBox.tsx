@@ -1,4 +1,4 @@
-import { paymentMethodList } from '@/External/lists';
+import { clientList, paymentMethodList } from '@/External/lists';
 import styles from './clientBox.module.css';
 import Image from 'next/image';
 
@@ -9,8 +9,8 @@ const ClientBox = () => {
       <div>
         {Array(10).fill('a').map((counter, ci) => (
           <article key={ci}>
-            {paymentMethodList.map((el, i) => (
-              <img alt='' width={100} height={100} src={'https://res.cloudinary.com/dvnemzw0z/image/upload/v1707484303/david%20walter/access-removebg-preview_jjbanz.png'} key={i} />
+            {clientList.map((client, i) => (
+              <img alt='' width={100} height={100} src={client} key={i} />
             ))}
           </article>
         ))}

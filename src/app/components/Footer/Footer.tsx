@@ -14,7 +14,7 @@ const Footer = () => {
           <ul>
             <Link href={'/call'}>
               <span>Telephone</span>
-              <p><MdCall /> <span className='cash'>+233(0)302-224-517</span></p>
+              <p><MdCall /> <span className='cash'>+233 (0) 30 222 4517</span></p>
             </Link>
             <Link href={'/call'}>
               <span>Cell</span>
@@ -25,12 +25,12 @@ const Footer = () => {
               <Link href={'/call'}>
                 <p><MdMail /> <span >dwloffice@davidwalterghana.com</span></p>
               </Link>
-              <Link href={''}>
+              {/* <Link href={''}>
                 <p><MdMail /> <span >md@davidwalterghana.com</span></p>
               </Link>
               <Link href={''}>
                 <p><MdMail /> <span >gm@davidwalterghana.com</span></p>
-              </Link>
+              </Link> */}
             </article>
           </ul>
         </div>
@@ -39,23 +39,23 @@ const Footer = () => {
           <article>
             <p><MdLocationPin /> <span >Office Address</span></p>
             <Link href={'/call'}>
-              <p><span >AVA House C66/ 2 Kojo Thompson Road, Adabraka, Accra</span></p>
+              <p><span >C66/2 Kojo Thompson Road, Adabraka-Accra</span></p>
             </Link>
           </article>
 
           <article>
             <p><MdLocationPin /> <span >Postal Address</span></p>
             <Link href={'/call'}>
-              <p><span >P. O. Box OS 01663, Osu - Accra, Ghana</span></p>
+              <p><span >C66/2 Kojo Thompson Road, Adabraka-Accra</span></p>
             </Link>
           </article>
 
-          <article>
+          {/* <article>
             <p><MdLocationPin /> <span >GPS Address</span></p>
             <Link href={'/call'}>
               <p><span >GA-074-1988</span></p>
             </Link>
-          </article>
+          </article> */}
         </div>
         <div className={styles.right}>
           <h3>Mail Us</h3>

@@ -44,7 +44,7 @@ const Contact = () => {
             <h3>Get In Touch</h3>
 
             <span>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas pariatur ipsam aspernatur dolore a maiores deserunt nisi id nesciunt unde, tempore numquam quos ab atque laboriosam nulla minus, error voluptas.
+              Thank you for considering DWL as your partner. We look forward to the opportunity to work with you and make your vision a reality.
             </span>
 
             <article>
@@ -52,14 +52,14 @@ const Contact = () => {
                 <PiPhoneCall />
                 <p>
                   <strong>Call Us</strong>
-                  <span className='cash'>+233 55 000 0000</span>
+                  <span className='cash'>+233 (0) 30 222 4517</span>
                 </p>
               </legend>
               <legend>
                 <BiMailSend />
                 <p>
                   <strong>Email Us</strong>
-                  <span className='cash'>sales@dwengineeringafrica.com</span>
+                  <span className='cash'>dwloffice@davidwalterghana.com</span>
                 </p>
               </legend>
             </article>

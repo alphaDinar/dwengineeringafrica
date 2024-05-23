@@ -10,6 +10,19 @@ const Services = () => {
   const place = 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1715907826/RGV/mining-industry-1024x683_x5lf8f.jpg';
 
 
+  const services = [
+    { tag: 'General Building Construction', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716471669/dwEngineering/shutterstock_1888885951_xiyugj.jpg' },
+    { tag: 'Civil Engineering Works', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716471881/dwEngineering/portrait-person-working-construction-industry_23-2151349704_z0wnlr.jpg' },
+    { tag: 'Building Engineering Services (MEP)', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716471965/dwEngineering/cropped-shot-dark-skinned-contractor-holding-touch-pad-entering-data-while-working-new-housing-project-sitting-desk-with-drawings-scale-model-house-blueprint-rolls-ruler-helme_xoxuoy.jpg' },
+    { tag: 'Pre-Construction Services', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472044/dwEngineering/afro-american-builders-wearing-helmets-face-masks-while-measuring-wall_181624-58281_sd7chv.jpg' },
+    { tag: 'Conceptual Budgeting', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472150/dwEngineering/empty-floor-front-modern-building_1127-2893_lvbxvd.jpg' },
+    { tag: 'Value Engineering', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472217/dwEngineering/dark-skinned-contractor-using-technical-drawing-instrument-developing-new-building-project_273609-5606_smvdjd.jpg' },
+    { tag: 'Scheduling', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472330/dwEngineering/side-view-cropped-man-working-financial-report_1098-18851_u6ztzt.jpg' },
+    { tag: 'Phase Analysis', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472380/dwEngineering/black-businessman-using-computer-laptop_53876-24736_te9ufa.jpg' },
+    { tag: 'Estimation', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472419/dwEngineering/close-up-house-blueprints_329181-3484_wcahmi.jpg' },
+    { tag: 'Design / Build', con: 'lorem', url : 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1716472482/dwEngineering/side-view-woman-making-plans-redecorate-home-with-laptop_23-2148814371_rv5ctn.jpg' }
+  ]
+
   return (
     <section id="con">
       <TopNav />
@@ -18,13 +31,13 @@ const Services = () => {
         <TitleBox title='Services We Offer' />
 
         <section className={styles.services}>
-          {Array(6).fill('a').map((el, i) => (
+          {services.map((service, i) => (
             <div className={styles.service} key={i}>
               <div className={styles.imgBox}>
-                <Image alt='' src={place} fill className='cover' />
+                <Image alt='' src={service.url} fill className='cover' />
               </div>
               <p>
-                <strong>Mining</strong>
+                <strong>{service.tag}</strong>
                 <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quod assumenda expedita nobis provident ex est dolores tenetur quibusdam dignissimos. Eligendi reprehenderit dolorem perspiciatis earum aperiam suscipit porro eum praesentium!</small>
               </p>
             </div>

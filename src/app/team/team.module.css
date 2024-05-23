@@ -12,24 +12,21 @@
 .member {
   display: grid;
   gap: 1rem;
-  min-height: 380px;
-  padding: 10px;
+  align-content: flex-start;
+  padding: 20px;
   background: whitesmoke;
-  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
-  border-radius: 15px 15px 0 0;
 }
 
 .member .imgBox {
-  height: 200px;
+  height: 250px;
   position: relative;
 }
 
 .member .imgBox img {
-  border-radius: 15px 15px 0 0;
-  border-radius: 15px;
+  object-position: top !important;
 }
 
-.member p {
+.member article {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -37,7 +34,14 @@
   text-align: center;
 }
 
-.member p strong {
+.member article hr {
+  height: 2px;
+  display: block;
+  background: black;
+  width: 100%;
+}
+
+.member article strong {
   font-size: 1.2rem;
 }
 
@@ -45,7 +49,7 @@
   font-size: 1.2rem;
 }
 
-.member p small {
+.member article small {
   font-size: 1rem;
 }
 
@@ -73,12 +77,11 @@
     gap: 1rem;
   }
 
-  .member {
-    min-height: 450px;
-    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
-  }
-
   .members {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .member .imgBox {
+    height: 300px;
   }
 }

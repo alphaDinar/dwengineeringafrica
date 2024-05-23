@@ -8,6 +8,8 @@ import { MdTaskAlt } from 'react-icons/md';
 
 const About = () => {
   const place2 = 'https://res.cloudinary.com/dvnemzw0z/image/upload/v1715285538/david%20walter/working-housing-project_1098-17511_jjjnlk.jpg';
+  const aboutText = "David Walter Limited (DWL) is a renowned leader in the construction industry, boasting nearly five decades of excellence and innovation. With a diverse portfolio valued at over USD 129 million in completed projects and USD 93 million in ongoing endeavors, DWL consistently exceeds client expectations while leaving a lasting impact on infrastructure development. Our commitment to quality, integrity, and client satisfaction is evident in every project we undertake, from residential apartments to critical infrastructure such as railways and educational institutions. Beyond project completion, DWL's focus on sustainability drives positive change in communities across multiple countries. As a trusted partner, DWL distinguishes itself through dedication to safety, compliance, and innovation. Our global presence, combined with local expertise, ensures efficient project execution regardless of scale or complexity. In summary, DWL's unwavering pursuit of excellence positions us as leaders in the industry. With a proven track record and a vision for the future, we remain committed to delivering value to clients, communities, and stakeholders worldwide."
+
   return (
     <section id='con'>
       <TopNav />
@@ -20,11 +22,7 @@ const About = () => {
             <Image alt='' src={place} className='cover' fill />
           </section>
           <section className={styles.right}>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro animi totam id tenetur molestiae accusantium iste doloribus, eum voluptatem sunt perspiciatis. Consectetur dolorum ea sed soluta aliquam dolor similique.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, nostrum dolor. Voluptate vero sunt iste. Modi incidunt culpa illum saepe dolores, libero sunt mollitia, vitae sed debitis, numquam consequatur voluptatibus?
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quo voluptatibus amet praesentium quibusdam consequatur vel atque corrupti commodi deleniti recusandae, sunt iste facere est numquam ad ut mollitia impedit.
-            </p>
+            <p>{aboutText}</p>
 
             <article>
               <legend><MdTaskAlt /> <small>Lorem ipsum dolor</small></legend>
@@ -32,7 +30,7 @@ const About = () => {
               <legend><MdTaskAlt /> <small>Lorem ipsum dolor</small></legend>
             </article>
 
-            <img src={place2} alt=""  height={150} className='cover' />
+            <img src={place2} alt="" height={150} className='cover' />
           </section>
         </section>
       </section>
