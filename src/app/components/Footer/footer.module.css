@@ -1,3 +1,18 @@
+.footerBoxHolder {
+  background: yellow;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* padding: 20px; */
+}
+
+.logoBox {
+  background: white;
+  /* padding: ; */
+  padding: 20px;
+  text-align: center;
+  background: whitesmoke;
+}
+
 .footerBox {
   width: 80%;
   padding: 5vh 10%;
@@ -7,11 +22,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logo {
-  font-size: 2.5rem;
-  color: var(--text);
 }
 
 .low {
@@ -99,7 +109,8 @@
   text-align: center;
   align-items: center;
 }
-.low p{
+
+.low p {
   justify-content: center;
 }
 
