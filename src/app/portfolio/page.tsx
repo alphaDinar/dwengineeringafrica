@@ -1,7 +1,11 @@
+'use client'
 import { IoConstructOutline } from 'react-icons/io5';
 import TitleBox from '../components/TitleBox/TitleBox';
 import TopNav from '../components/TopNav/TopNav';
 import styles from './portfolio.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Portfolio = () => {
   const text = "The total value of completed projects in the company portfolio is USD 129,059,882.51. Additionally, there are ongoing projects valued at USD 93,574,676 and awarded projects yet to start with a total value of USD 25,000,000. This showcases the substantial value and diverse scope of projects undertaken by the company, solidifying its position as a leading construction firm in the industry."
@@ -20,6 +24,12 @@ const Portfolio = () => {
     { tag: "Railways", count: 2, type: 'Major Projects' }
   ]
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
+
   return (
     <section id='con'>
       <TopNav />
@@ -31,7 +41,7 @@ const Portfolio = () => {
 
         <section className={styles.cBoxes}>
           {cList.map((el, i) => (
-            <div key={i}>
+            <div key={i} data-aos="fade-right" data-aos-delay={50 * (i + 1)}>
               <IoConstructOutline />
               {el}
             </div>
@@ -42,7 +52,7 @@ const Portfolio = () => {
 
         <section className={styles.hBoxes}>
           {hList.map((el, i) => (
-            <div key={i}>
+            <div key={i} data-aos="fade-right" data-aos-delay={50 * (i + 1)}>
               <strong className='big'>{el.count}</strong>
               <p>
                 <span>{el.type}</span>

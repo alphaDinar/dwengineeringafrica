@@ -19,8 +19,8 @@ const TopNav = () => {
     <section className={styles.topNav} id='hor'>
       <section className={styles.top}>
         <p>
-          <Link href={''}> <MdPhone /> <span className='cash'>+233 (0) 30 222 4517</span>  </Link>
-          <Link href={''}> <MdPhone /> <span>info@dwengineeringafrica.com</span>  </Link>
+          <Link href={'tel:233302224517'}> <MdPhone /> <span className='cash'>+233 (0) 30 222 4517</span>  </Link>
+          <Link href={'mailto:info@dwengineeringafrica.com'}> <MdPhone /> <span>info@dwengineeringafrica.com</span>  </Link>
         </p>
 
         <legend>
