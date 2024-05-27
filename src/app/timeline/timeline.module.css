@@ -167,6 +167,24 @@
   color: wheat;
 }
 
+.totalBox {
+  width: 100%;
+  border-top: 3px dotted gray;
+  display: flex;
+  padding-top: 3vh;
+  /* padding-bottom: 3vh; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalBox span{
+  font-size: 1.4rem;
+}
+
+.totalBox strong{
+  font-size: 2.5rem;
+}
+
 @media all and (max-width:750px) {
 
   .timeBox {

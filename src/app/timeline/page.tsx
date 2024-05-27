@@ -185,6 +185,10 @@ const Timeline = () => {
           </section>
         }
 
+        <section className={styles.totalBox}>
+          <span>Grand Total</span>
+          <strong className="big">USD 129,059,882.51</strong>
+        </section>
       </section>
     </section>
   );

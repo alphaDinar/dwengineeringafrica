@@ -1,0 +1,65 @@
+.portfolioBox {
+  display: grid;
+  gap: var(--gSpace);
+  padding-bottom: 3vh;
+}
+
+.cBoxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cBoxes div {
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cBoxes div svg {
+  font-size: 1.4rem;
+  background: springgreen;
+  color: white;
+  padding: 5px;
+}
+
+.portfolioBox hr {
+  margin: 3vh 0;
+  border-top: 2px solid black;
+}
+
+.hBoxes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hBoxes div {
+  display: flex;
+  align-items: center;
+  background: var(--text);
+  gap: 0.5rem;
+  padding: 10px;
+}
+
+.hBoxes div strong {
+  font-size: 2rem;
+}
+
+@media all and (max-width:850px) {
+
+  .cBoxes,
+  .hBoxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width:500px) {
+
+  .cBoxes,
+  .hBoxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

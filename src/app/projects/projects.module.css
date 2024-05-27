@@ -9,7 +9,12 @@
   align-items: center;
 }
 
-.projectBox header>*:nth-last-child(1) {
+.projectBox header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectBox header nav a {
   padding: 8px;
   background: var(--text);
   color: black;
@@ -86,7 +91,7 @@
     align-items: center;
   }
 
-  .projectBox header{
+  .projectBox header {
     flex-direction: column;
     gap: 0.5rem;
   }

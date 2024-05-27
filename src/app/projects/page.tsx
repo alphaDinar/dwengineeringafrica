@@ -17,7 +17,10 @@ const Projects = () => {
         <header>
           <TitleBox title={'Project Gallery'} />
 
-          <Link href={'/timeline'}>Project Timeline</Link>
+          <nav>
+            <Link href={'/timeline'}>Project Timeline</Link>
+            <Link href={'/portfolio'}>Project Portfolio</Link>
+          </nav>
         </header>
 
         <section className={styles.projects}>
