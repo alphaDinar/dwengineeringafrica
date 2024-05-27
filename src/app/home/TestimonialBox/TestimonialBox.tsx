@@ -32,8 +32,7 @@ const TestimonialBox = () => {
       <section className={styles.sheet}></section>
       <section className={styles.con}>
         <header>
-          <h3>Testimonials</h3>
-          <sub></sub>
+          <span id='liner'>Testimonials</span>
         </header>
         <Swiper
           modules={[Autoplay]}
