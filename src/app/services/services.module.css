@@ -3,6 +3,19 @@
   gap: 3vh;
 }
 
+.serviceBox header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceBox header>*:nth-last-child(1) {
+  padding: 8px;
+  background: var(--text);
+  color: black;
+  font-weight: 600;
+}
+
 .services {
   display: grid;
   gap: 1rem;
@@ -11,19 +24,45 @@
 
 .service {
   padding: 15px;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   background: whitesmoke;
   transition: 0.4s ease;
   display: grid;
   gap: 0.5rem;
 }
 
-.imgBox {
+.specialization {
+  /* background: black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: whitesmoke;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+
+.specialization .imgBox {
+  padding: 40px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* .specialization img {
+  border: 1px solid white;
+} */
+
+.specialization p {
+  text-align: center;
+}
+
+
+.service .imgBox {
   position: relative;
   height: 180px;
 }
 
-.imgBox img {
+.service .imgBox img {
   object-position: top;
 }
 
@@ -57,11 +96,21 @@
 }
 
 @media all and (max-width:500px) {
-  .imgBox {
+  .service .imgBox {
     position: relative;
     height: 220px;
   }
+
   .services {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service p {
+    text-align: center;
+  }
+
+  .serviceBox header {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

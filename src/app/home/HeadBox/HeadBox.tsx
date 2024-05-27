@@ -19,7 +19,7 @@ const HeadBox = () => {
           </h3>
 
           <small>
-            David Walter Limited (DWL) is a premier construction firm with nearly five decades of experience, specializing in Civil Engineering, General Building, Electrical and Mechanical, Master Planning, and Construction Innovation.
+            DW Engineering Africa (DWEA) is a premier construction firm with nearly five decades of experience, specializing in Civil Engineering, General Building, Electrical and Mechanical, Master Planning, and Construction Innovation.
           </small>
 
           <Link href={'/contact'}>Contact Us <MdEast /></Link>

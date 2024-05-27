@@ -29,7 +29,7 @@ const Footer = () => {
               <article>
                 <span>Email</span>
                 <Link href={'/call'}>
-                  <p><MdMail /> <span >dwloffice@davidwalterghana.com</span></p>
+                  <p><MdMail /> <span >info@dwengineeringafrica.com</span></p>
                 </Link>
                 {/* <Link href={''}>
                 <p><MdMail /> <span >md@davidwalterghana.com</span></p>

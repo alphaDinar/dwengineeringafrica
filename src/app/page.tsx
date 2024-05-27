@@ -4,9 +4,11 @@ import AboutBox from "./home/AboutBox/AboutBox";
 import BlogBox from "./home/BlogBox/BlogBox";
 import ChoiceBox from "./home/ChoiceBox/ChoiceBox";
 import ClientBox from "./home/ClientBox/ClientBox";
+import GlobalBox from "./home/GlobalBox/GlobalBox";
 import HeadBox from "./home/HeadBox/HeadBox";
 import SkillBox from "./home/SkillBox/SkillBox";
 import TestimonialBox from "./home/TestimonialBox/TestimonialBox";
+import VisionBox from "./home/VisionBox/VisionBox";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <AboutBox />
       <ClientBox />
       <ChoiceBox />
+      <GlobalBox />
+      <VisionBox />
 
       <TestimonialBox />
 

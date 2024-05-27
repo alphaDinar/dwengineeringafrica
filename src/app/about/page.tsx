@@ -25,9 +25,9 @@ const About = () => {
             <p>{aboutText}</p>
 
             <article>
-              <legend><MdTaskAlt /> <small>Lorem ipsum dolor</small></legend>
-              <legend><MdTaskAlt /> <small>Lorem ipsum dolor</small></legend>
-              <legend><MdTaskAlt /> <small>Lorem ipsum dolor</small></legend>
+              <legend><MdTaskAlt /> <small>Experience</small></legend>
+              <legend><MdTaskAlt /> <small>Efficiency</small></legend>
+              <legend><MdTaskAlt /> <small>Excellence</small></legend>
             </article>
 
             <img src={place2} alt="" height={150} className='cover' />

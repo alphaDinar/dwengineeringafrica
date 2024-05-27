@@ -1,0 +1,55 @@
+.visionBoxHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.visionBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  display: grid;
+  gap: 1vh;
+}
+
+.left h3,
+.right h3 {
+  background: var(--text);
+  padding: 5px;
+}
+
+.left p,
+.right p {
+  font-size: 1.1rem;
+}
+
+.left small,
+.right small {
+  font-size: 1rem;
+}
+
+.left hr,
+.right hr {
+  border-top: 2px solid black;
+}
+
+
+.mid {
+  position: relative;
+}
+
+@media all and (max-width:1250px) {
+  .visionBox {
+    grid-template-columns: 1fr;
+  }
+
+  .mid {
+    height: 350px;
+  }
+}

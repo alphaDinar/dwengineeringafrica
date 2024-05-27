@@ -43,7 +43,8 @@ main {
   gap: 5vh;
 }
 
-#hor {
+#hor,
+#bottomBox {
   width: 80%;
   padding-right: 10%;
   padding-left: 10%;
@@ -71,6 +72,11 @@ body::-webkit-scrollbar-thumb {
 
 .cash {
   font-family: 'Poppins', sans-serif;
+}
+
+.big {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
 }
 
 #liner {
@@ -119,7 +125,9 @@ body::-webkit-scrollbar-thumb {
 
 
 @media all and (max-width:1300px) {
-  #hor {
+
+  #hor,
+  #bottomBox {
     width: 90%;
     padding-right: 5%;
     padding-left: 5%;
@@ -127,7 +135,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media all and (max-width:900px) {
-  #hor {
+
+  #hor,
+  #bottomBox {
     width: 95%;
     padding-right: 2.5%;
     padding-left: 2.5%;

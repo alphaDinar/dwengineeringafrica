@@ -20,7 +20,7 @@ const TopNav = () => {
       <section className={styles.top}>
         <p>
           <Link href={''}> <MdPhone /> <span className='cash'>+233 (0) 30 222 4517</span>  </Link>
-          <Link href={''}> <MdPhone /> <span>dwloffice@davidwalterghana.com</span>  </Link>
+          <Link href={''}> <MdPhone /> <span>info@dwengineeringafrica.com</span>  </Link>
         </p>
 
         <legend>

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 10vh;
   gap: 2rem;
 }
 
@@ -55,9 +56,9 @@
   margin: 0 auto;
 }
 
-.timeBox section img {
+/* .timeBox section img {
   border-radius: 10px;
-}
+} */
 
 .timeBox .right {
   margin-top: 200px;
@@ -66,18 +67,26 @@
 .event {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
   cursor: pointer;
   color: black;
+  background: whitesmoke;
+  /* background: var(--theme); */
+  /* background: rgb(252, 237, 209); */
+  /* color: var(--text); */
+  /* color: black; */
+  width: 300px;
 }
 
 .event article {
-  background: white;
   padding: 0;
-  display: flex;
   padding: 10px;
-  flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.event article hr {
+  border-top: 1px dotted var(--theme);
 }
 
 .event sub {
@@ -93,24 +102,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .event .imgBox {
+  /* display: none; */
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 200px;
 }
 
-.event:hover sub {
+.event .imgBox img {
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* .event:hover sub {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
-.event sub svg {
+/* .event sub svg {
   transition: 0.3s ease;
   color: wheat;
+} */
+
+.event legend {
+  font-size: 1.5rem;
+}
+
+.event strong {
+  font-size: 1.4rem;
+  /* font-weight: 400; */
 }
 
 .event:hover sub svg {
@@ -143,6 +168,23 @@
 }
 
 @media all and (max-width:750px) {
+
+  .timeBox {
+    grid-template-columns: 1fr 12px;
+  }
+
+  .timer {
+    width: 10px;
+  }
+
+  .timer .tracker {
+    width: 10px;
+  }
+
+  .event {
+    width: revert;
+  }
+
   .event .imgBox {
     position: relative;
     width: 100%;
@@ -161,7 +203,7 @@
 
 @media all and (max-width:750px) {
   .event .imgBox {
-    height: 80px;
+    height: 200px;
   }
 
   .timeBox .right {

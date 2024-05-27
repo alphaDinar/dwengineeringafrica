@@ -1,0 +1,29 @@
+.globalBox {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width:1000px) {
+  .items {
+    gap: 1vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media all and (max-width:500px) {
+  .items {
+    flex-direction: column;
+  }
+} */

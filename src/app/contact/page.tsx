@@ -44,7 +44,7 @@ const Contact = () => {
             <h3>Get In Touch</h3>
 
             <span>
-              Thank you for considering DWL as your partner. We look forward to the opportunity to work with you and make your vision a reality.
+              Thank you for considering DW Engineering Africa as your partner. We look forward to the opportunity to work with you and make your vision a reality.
             </span>
 
             <article>
@@ -59,7 +59,7 @@ const Contact = () => {
                 <BiMailSend />
                 <p>
                   <strong>Email Us</strong>
-                  <span className='cash'>dwloffice@davidwalterghana.com</span>
+                  <span className='cash'>info@dwengineeringafrica.com</span>
                 </p>
               </legend>
             </article>
